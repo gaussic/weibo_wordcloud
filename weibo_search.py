@@ -84,9 +84,7 @@ def gen_img(texts, img_file):
     wc = WordCloud(
         background_color='white',
         mask=image_coloring,
-        font_path='/Library/Fonts/STHeiti Light.ttc',
-        max_font_size=40,
-        random_state=42
+        font_path='/Library/Fonts/STHeiti Light.ttc'
     )
     wc.generate(data)
 
