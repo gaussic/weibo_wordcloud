@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import json
 
 import jieba.analyse
@@ -36,7 +38,7 @@ def gen_img(texts, img_file):
 
 
 if __name__ == '__main__':
-    keyword = '谷歌'
+    keyword = '微软'
     mblogs = json.loads(open('result_{}.json'.format(keyword), 'r', encoding='utf-8').read())
     print('微博总数：', len(mblogs))
 
@@ -46,4 +48,4 @@ if __name__ == '__main__':
 
     print("总词数：", len(words))
 
-    gen_img(words, 'google.jpg')
+    gen_img(words, 'edge.png')
